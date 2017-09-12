@@ -1,0 +1,34 @@
+package rewards
+
+class BootStrap {
+
+    def init = { servletContext ->
+        new Product(name: "banana",sku: "sku1",price: 14.90).save()
+        new Product(name: "mango",sku: "sku2",price: 2.90).save()
+        new Product(name: "orange",sku: "sku3",price: 10.90).save()
+
+        new Customer(firstName: "fitsum",lastName:"beyene",phone: 123456789,email: "fitsum.admassu@gmail.com",totalPoints: 80).save()
+        new Customer(firstName: "sele",lastName:"kelkay",phone: 123456789,email: "selenat.begashaw@gmail.com",totalPoints: 70).save()
+        new Customer(firstName: "loza",lastName:"fitsum",phone: 123456789,email: "loza.fitsum@gmail.com",totalPoints: 60).save()
+        new Customer(firstName: "noeh",lastName:"fitsum",phone: 123456789,email: "noeh.fitsum@gmail.com",totalPoints: 50).save()
+        new rewards.Customer(phone: 8015551212, firstName: "Luther", lastName: "Allison", totalPoints: 1).save()
+        new rewards.Customer(phone: 2135551212, firstName: "Bessie", lastName: "Brown", totalPoints: 2).save()
+        new rewards.Customer(phone: 6055551212, firstName: "Bo", lastName: "Diddley", totalPoints: 3).save()
+        new rewards.Customer(phone: 6165551212, firstName: "Leroy", lastName: "Foster", totalPoints: 4).save()
+        new rewards.Customer(phone: 8015554321, firstName: "Earl", lastName: "Hooker", totalPoints: 5).save()
+        new rewards.Customer(phone: 7315551212, firstName: "Maggie", lastName: "Jones", totalPoints: 5).save()
+        new rewards.Customer(phone: 8185551212, firstName: "Nick", lastName: "Moss", totalPoints: 4).save()
+        new rewards.Customer(phone: 7085551212, firstName: "Odie", lastName: "Payne", totalPoints: 3).save()
+        new rewards.Customer(phone: 4155551212, firstName: "Jonny", lastName: "Shines", totalPoints: 2).save()
+        new rewards.Customer(phone: 7225551212, firstName: "Ethel", lastName: "Waters", totalPoints: 1).save()
+        new rewards.Customer(phone: 6045551212, firstName: "Scrapper", lastName: "Blackwell", totalPoints: 1).save()
+        new rewards.Customer(phone: 7315551122, firstName: "Archie", lastName: "Edwards", totalPoints: 2).save()
+        new rewards.Customer(phone: 5145551212, firstName: "Jessie", lastName: "Fuller", totalPoints: 3).save()
+        new rewards.Customer(phone: 4085551212, firstName: "Ida", lastName: "Goodson", totalPoints: 4).save()
+        new rewards.Customer(phone: 8015551234, firstName: "Bumble Bee", lastName: "Smith", totalPoints: 5).save()
+        new rewards.Customer(phone: 4315551212, firstName: "Sippie", lastName: "Wallace", totalPoints: 4).save()
+
+    }
+    def destroy = {
+    }
+}
